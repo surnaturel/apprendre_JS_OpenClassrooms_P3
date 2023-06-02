@@ -1,0 +1,56 @@
+#retrait_solde{
+    width: 70%;
+    height: 70vh;
+    border: 2px solid blue;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#retrait_solde .image_uba {
+    border: 2px solid green;
+    width: 49%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#retrait_solde .image_uba img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+#retrait_solde .slde_reta{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    /*position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);*/
+    border: 1px solid green;
+}
+#retrait_solde .slde_reta p{
+    font-size: 28px;
+    font-weight: 600;
+}
+#retrait_solde .slde_reta .bouton{
+    border: 2px solid red;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#retrait_solde .slde_reta .bouton button{
+    padding: 12px 44px;
+    border-radius: 8px;
+    font-size: 22px;
+    color:white;
+    border: none;
+}
+#retrait_solde .slde_reta .retrait{
+    background-color: rgb(130, 130, 214);
+}
+#retrait_solde .slde_reta .solde{
+    background-color: rgb(146, 218, 212);
+}

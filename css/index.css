@@ -20,10 +20,9 @@ body {
 main {
     width: 100%;
     padding: 20px; /* Ajout d'un espacement intérieur pour le contenu de la balise main */
-    display: none;
 }
 
-.formulaire_bancaire {
+#formulaire_bancaire {
     border: 2px solid green;
     width: 40%;
     padding: 20px; /* Ajout d'un espacement intérieur pour les éléments du formulaire */
@@ -33,12 +32,12 @@ main {
     justify-content: center;
     gap: 30px;
 }
-.formulaire_bancaire h2{
+#formulaire_bancaire h2{
     text-align: center;
     font-size: 45px;
     font-weight: 500;
 }
-.formulaire_bancaire label{
+#formulaire_bancaire label{
     font-size: 20px;
 }
 #prenom-nom{
@@ -69,7 +68,7 @@ main {
 #code input{
     padding: 8px;
 }
-#motPasse .afficher_code{
+#motPasse #afficher_code{
     width: 10px;
     transform: scale(1.9);
     margin-top: 12px;
@@ -80,45 +79,4 @@ main {
     font-size: 22px;
     background-color: brown;
     color:white;
-}
-#retrait_solde{
-    width: 70%;
-    min-height: 70vh;
-    border: 2px solid blue;
-    margin: auto;
-    position: relative;
-}
-#retrait_solde .slde_reta{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
-    border: 1px solid green;
-}
-#retrait_solde .slde_reta p{
-    font-size: 28px;
-    font-weight: 600;
-}
-#retrait_solde .slde_reta .bouton{
-    border: 2px solid red;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-#retrait_solde .slde_reta .bouton button{
-    padding: 12px 44px;
-    border-radius: 8px;
-    font-size: 22px;
-    color:white;
-    border: none;
-}
-#retrait_solde .slde_reta .retrait{
-    background-color: rgb(130, 130, 214);
-}
-#retrait_solde .slde_reta .solde{
-    background-color: rgb(146, 218, 212);
 }

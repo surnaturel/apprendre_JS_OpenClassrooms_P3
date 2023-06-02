@@ -10,8 +10,8 @@
     <body>
         <h1 id="titre-banque">Exemple de Reception de Guichet Bancaire</h1>
         <main>
-            <div class="formulaire_bancaire">
-                <h2 class="inscription">INSCRIPTION</h2>
+            <h2 class="inscription">INSCRIPTION</h2>
+            <form id="formulaire_bancaire" action="">
                 <div id="prenom-nom">
                     <div class="nom">
                         <label for="nom">Nom</label>
@@ -31,27 +31,16 @@
                         <label for="code_validation">Validation du Code</label>
                         <div id="motPasse">
                             <input type="password" id="code_validation" name="code_validation">
-                            <input type="checkbox" name="aficher" class="afficher_code">
+                            <input type="checkbox" name="aficher" id="afficher_code">
                         </div>
                         
                     </div>
                 </div>
                 <div id="validation">
-                    <button type="submit">Validation</button>
+                    <button type="button"  id="valide">Validation</button>
                 </div>
-            </div>
+            </form>
         </main>
-        <div id="retrait_solde">
-            <div class="slde_reta">
-                <div class="bouton">
-                    <button class="retrait">Retrait</button>
-                    <button class="solde">Solde</button>
-                </div>
-                <p> vous ne pouvez pas faire de retrait votre compte est insuffissant</p>
-                <p id="resultat">Solde : <span class="montant_solde"></span> </p>
-                <p id="resultat">Felication il vous reste : <span class="montant_reslt"></span></p>
-            </div>
-        </div>
         <script src="index.js"></script>
     </body>
 </html>
