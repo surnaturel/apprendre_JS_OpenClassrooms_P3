@@ -4,11 +4,54 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/index.css">
-        <title>Apprendre JS</title>
+        <title>Apprendre Js</title>
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1>Apprendre JS</h1>
+        <h1 id="titre-banque">Exemple de Reception de Guichet Bancaire</h1>
+        <main>
+            <div class="formulaire_bancaire">
+                <h2 class="inscription">INSCRIPTION</h2>
+                <div id="prenom-nom">
+                    <div class="nom">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom">
+                    </div>
+                    <div class="prenom">
+                        <label for="prenom">Prenom</label>
+                        <input type="text" id="prenom" name="prenom">
+                    </div>
+                </div>
+                <div id="code">
+                    <div class="code">
+                        <label for="code">Numero de code</label>
+                        <input type="password" id="code" name="code">
+                    </div>
+                    <div class="code_validation">
+                        <label for="code_validation">Validation du Code</label>
+                        <div id="motPasse">
+                            <input type="password" id="code_validation" name="code_validation">
+                            <input type="checkbox" name="aficher" class="afficher_code">
+                        </div>
+                        
+                    </div>
+                </div>
+                <div id="validation">
+                    <button type="submit">Validation</button>
+                </div>
+            </div>
+        </main>
+        <div id="retrait_solde">
+            <div class="slde_reta">
+                <div class="bouton">
+                    <button class="retrait">Retrait</button>
+                    <button class="solde">Solde</button>
+                </div>
+                <p> vous ne pouvez pas faire de retrait votre compte est insuffissant</p>
+                <p id="resultat">Resultat : <span class="montant_solde"></span> </p>
+                <p id="resultat">Felication il vous reste : <span class="montant_reslt"></span> euro</p>
+            </div>
+        </div>
         <script src="index.js"></script>
     </body>
 </html>
