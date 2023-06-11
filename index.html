@@ -15,29 +15,29 @@
                 <div id="prenom-nom">
                     <div class="nom">
                         <label for="nom">Nom</label>
-                        <input type="text" id="nom" name="nom">
+                        <input type="text" id="nom" name="nom" required>
                     </div>
                     <div class="prenom">
                         <label for="prenom">Prenom</label>
-                        <input type="text" id="prenom" name="prenom">
+                        <input type="text" id="prenom" name="prenom" required>
                     </div>
                 </div>
                 <div id="code">
                     <div class="code">
                         <label for="code">Numero de code</label>
-                        <input type="password" id="code" name="code">
+                        <input type="password" id="code" name="code" required>
                     </div>
                     <div class="code_validation">
                         <label for="code_validation">Validation du Code</label>
                         <div id="motPasse">
-                            <input type="password" id="code_validation" name="code_validation">
-                            <input type="checkbox" name="aficher" id="afficher_code">
+                            <input type="password" id="code_validation" name="code_validation" required>
+                            <input type="checkbox" name="aficher" id="afficher_code" required>
                         </div>
                         
                     </div>
                 </div>
                 <div id="validation">
-                    <button type="button"  id="valide">Validation</button>
+                    <button type="submit"  id="valide">Validation</button>
                 </div>
             </form>
         </main>
