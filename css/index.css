@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 100vh; /* Utilisation de min-height pour garantir que la hauteur soit au moins 100vh */
+    border: 2px solid red;
+    background-color: #f9f9f9; /* Ajout d'une couleur de fond */
+
+}
+
+#titre-banque {
+    text-align: center;
+    padding: 10px; /* Ajout d'un espacement intérieur pour le titre */
+    font-size: 37px; /* Ajustement de la taille de police du titre */
+    font-weight: bold; /* Ajout d'une épaisseur de police en gras */
+    margin-bottom: 20px; /* Ajout d'une marge inférieure pour espacer du contenu suivant */
+}
+
+main {
+    width: 100%;
+    padding: 20px; /* Ajout d'un espacement intérieur pour le contenu de la balise main */
+}
+
+#formulaire_bancaire {
+    border: 2px solid green;
+    width: 40%;
+    padding: 20px; /* Ajout d'un espacement intérieur pour les éléments du formulaire */
+    margin: 0 auto; /* Utilisation de margin: 0 auto pour centrer le formulaire horizontalement */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+#formulaire_bancaire h2{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+}
+#formulaire_bancaire label{
+    font-size: 20px;
+}
+#prenom-nom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#prenom-nom div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#prenom-nom input{
+    width: 90%;
+    padding: 8px;
+}
+#code{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+#code div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#code input{
+    padding: 8px;
+}
+#motPasse #afficher_code{
+    width: 10px;
+    transform: scale(1.9);
+    margin-top: 12px;
+}
+#validation button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 22px;
+    background-color: brown;
+    color:white;
+}
